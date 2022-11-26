@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1rem;
+    background-image: url('../images/project-background-img.png');
+    margin: 0;
+    padding: 0;
+    font-family: "Mukta", sans-serif;
+}
+
+header {
+    background-color: lavender;
+    padding: .5em 2em 0;
+    margin: 0;
+}
+
+main {
+    margin-bottom: 3em;
+}
+
+.project-detail-img {
+    display: block;
+    width: 85%;
+    margin: 1em auto;
+    border-radius: 20px;
+    max-width: 500px;
+}
+
+.description-p{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.description-p p {
+    text-align: left;
+    padding: 1em 2em;
+    margin: 1em 0;
+    margin-left: 2em;
+    margin-right: 2em;
+    background-color: lightgoldenrodyellow;
+    border-radius: 20px;
+    box-shadow: 0 0 20px lightgoldenrodyellow;
+    max-width: 500px;
+}
+
+.project-links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.project-links p {
+    margin: 0;
+    margin-bottom: 1em;
+    padding: 0;
+}
+
+.link {
+    color: darkblue;
+    text-decoration: none;
+    border-bottom: 1px solid purple;
+    padding-bottom: .1em;
+}
+
+.link:hover {
+    border-bottom: 1px solid purple;
+    padding-bottom: .1em;
+    color: purple;
+}
+
+footer {
+    background-color: lavender;
+    color: #1c1c1c;
+    display: flex;
+    padding: 0em 2em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (min-width: 500px){
+    .project-links {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .project-links p {
+        margin-right: 1em;
+    }
+
+    .project-title {
+        margin-bottom: .5em;
+        padding-bottom: 0;
+    }
+
+    .description-p p {
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media (min-width: 700px){
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .project-title {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .project-links {
+        padding-top: 0;
+        margin-top: 0;
+    }   .
+}
+
+@media (min-width: 1200px){
+    .project-detail-img {
+        width: 1000px;
+    }
+    .description-p{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .description-p p {
+        height: 14em;
+        display: flex;
+        align-items: center;
+    }
+}
