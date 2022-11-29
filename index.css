@@ -319,7 +319,7 @@ footer {
     object-fit: cover;
     width: 100%;
     max-width: 500px;
-    min-width: 22em;
+    min-width: 18em;
 }
 
 .about-me .title, .contact{
